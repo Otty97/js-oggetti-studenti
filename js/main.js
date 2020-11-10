@@ -49,12 +49,12 @@ $(document).ready(function() {
   nuovoStudente.cognome = prompt("inserisci il tuo cognome");
   nuovoStudente.eta = parseInt(prompt("inserisci la tua età"));
   studenti.push(nuovoStudente);
-  console.log(nuovoStudente);
  })
 
   // Ciclo su tutti gli studenti e stampo per ognuno nome e cognome
   for (var i = 0; i < studenti.length; i++) {
     var studentiLista = studenti[i];
-    console.log(studentiLista);
+    console.log(studentiLista.nome);
+    console.log(studentiLista.cognome);
   }
 });
